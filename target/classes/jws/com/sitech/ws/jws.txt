@@ -1,0 +1,4 @@
+java  jdk  原生框架 jws 生成客户端代码
+在配置jdk的环境变量后 
+在cmd 命令里 执行命令 wsimport -keep http://192.130.228.17:9099/adapter/services/wsadapter?wsdl
+(-keep) 生成源码

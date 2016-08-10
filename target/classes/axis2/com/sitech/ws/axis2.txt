@@ -1,0 +1,5 @@
+axis2 生成客户端代码
+下载axis2-1.5.4bin.zip
+进入cmd  进入E:\utils\util\A-util-zip\axis2-1.5.4\bin
+执行命令 wsdl2java http://192.130.228.17:9099/adapter/services/wsadapter?wsdl
+生成客户端代码

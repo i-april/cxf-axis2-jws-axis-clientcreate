@@ -1,0 +1,16 @@
+axis 生成客户端代码 
+下载 axis-bin-1—4.zip
+解压后，添加环境变量
+ AXIS_HOME  =  E:\utils\util\A-util-zip\axis-1_4
+ AXIS_LIB  =  E:\utils\util\A-util-zip\axis-1_4\lib\axis.jar
+ path = path+%AXIS_HOME%\bin
+
+  在 /axis-1_4/  建bat文件
+bat文件内容 如下
+set Axis_Lib=E:\utils\util\A-util-zip\axis-1_4\lib 
+set Java_Cmd=java -Djava.ext.dirs=%Axis_Lib% 
+set Output_Path=E:
+set Package=axis
+%Java_Cmd% org.apache.axis.wsdl.WSDL2Java -o%Output_Path% -p%Package% http://192.130.228.17:9099/adapter/services/wsadapter?wsdl 
+
+启动执行bat文件 
